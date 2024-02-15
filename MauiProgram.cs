@@ -63,6 +63,9 @@ namespace Matt
             builder.Services.AddScoped<IApiRequestHelper, ApiRequestHelper>();
             builder.Services.AddSingleton<AppSettings>(appSettings);
 
+            // Services
+            builder.Services.AddScoped<IUserService, UserService>();
+
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
