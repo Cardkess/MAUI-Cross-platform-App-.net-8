@@ -26,7 +26,7 @@ namespace Matt
 
             var assembly = Assembly.GetExecutingAssembly();
 
-            using var stream = assembly.GetManifestResourceStream("Matt.launchSettings.json");
+            using var stream = assembly.GetManifestResourceStream("MAUI.launchSettings.json");
 
             AppSettings appSettings = new();
 
