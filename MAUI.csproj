@@ -21,10 +21,10 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Display name -->
-		<ApplicationTitle>Matt</ApplicationTitle>
+		<ApplicationTitle>MAUI Cross Platform App</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.matt</ApplicationId>
+		<ApplicationId>com.companyname.maui</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
