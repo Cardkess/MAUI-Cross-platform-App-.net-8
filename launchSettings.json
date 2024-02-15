@@ -1,0 +1,18 @@
+{
+  "profiles": {
+    "Windows Machine": {
+      "commandName": "MsixPackage",
+      "nativeDebugging": false
+    }
+  },
+
+  "AppSettings": {
+    "BaseWebUri": "https://www.google.com",
+    "APIs": [
+      {
+        "Name": "CentralAPI",
+        "BaseUri": "https://www.google.com"
+      }
+    ]
+  }
+}
