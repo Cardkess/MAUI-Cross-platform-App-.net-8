@@ -1,6 +1,8 @@
 ﻿using CommunityToolkit.Maui;
 using MAUI.Common;
 using MAUI.Services;
+using MAUI.View;
+using MAUI.ViewModel;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Globalization;
@@ -65,6 +67,14 @@ namespace Matt
 
             // Services
             builder.Services.AddScoped<IUserService, UserService>();
+
+
+            //Pages
+            builder.Services.AddSingleton<MainPage>();
+
+
+            //ViewModel
+            builder.Services.AddSingleton<SampleViewModel>();
 
 #if DEBUG
             builder.Logging.AddDebug();
