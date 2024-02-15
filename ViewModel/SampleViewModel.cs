@@ -11,14 +11,20 @@ namespace MAUI.ViewModel
     public partial class SampleViewModel : BaseViewModel
     {
         readonly IUserService _userService;
+
+        [ObservableProperty]
+        public int _count = 0;
+
         public SampleViewModel(IUserService  userService) { 
         
-            _userService = userService;
+           _userService = userService;
         }
 
         [RelayCommand]
         Task Increment()
         {
+            Count++;
+
             return Task.CompletedTask;
         }
     }

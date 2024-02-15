@@ -1,23 +1,16 @@
-﻿namespace MAUI.View;
+﻿using MAUI.ViewModel;
+
+namespace MAUI.View;
 
 public partial class MainPage : ContentPage
 {
-    int count = 0;
+    SampleViewModel SampleViewModel { get; set; }
 
-    public MainPage()
+    public MainPage(SampleViewModel sampleViewModel)
     {
         InitializeComponent();
+        SampleViewModel = sampleViewModel;
+        BindingContext = SampleViewModel;
     }
 
-    private void OnCounterClicked(object sender, EventArgs e)
-    {
-        count++;
-
-        if (count == 1)
-            CounterBtn.Text = $"Clicked {count} time";
-        else
-            CounterBtn.Text = $"Clicked {count} times";
-
-        SemanticScreenReader.Announce(CounterBtn.Text);
-    }
 }
