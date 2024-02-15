@@ -3,9 +3,9 @@
     x:Class="Matt.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Matt"
+    xmlns:local="clr-namespace:MAUI.View"
     Shell.FlyoutBehavior="Disabled"
-    Title="Matt">
+    Title="MAUI">
 
     <ShellContent
         Title="Home"
