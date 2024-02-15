@@ -66,7 +66,7 @@ namespace Matt
             builder.Services.AddSingleton<AppSettings>(appSettings);
 
             // Services
-            builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddSingleton<IUserService, UserService>();
 
 
             //Pages
