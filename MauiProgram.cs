@@ -1,5 +1,5 @@
 ﻿using CommunityToolkit.Maui;
-using MAUI.Common;
+using MAUI.Commons;
 using MAUI.Services;
 using MAUI.Views;
 using MAUI.ViewModels;
