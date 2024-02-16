@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MAUI.DTO.User;
+namespace MAUI.DTOs.User;
 
 public partial class User : ObservableObject
 {

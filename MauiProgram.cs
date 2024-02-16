@@ -1,14 +1,14 @@
 ﻿using CommunityToolkit.Maui;
 using MAUI.Common;
 using MAUI.Services;
-using MAUI.View;
+using MAUI.Views;
 using MAUI.ViewModel;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Globalization;
 using System.Reflection;
 
-namespace Matt
+namespace MAUI
 {
     public static class MauiProgram
     {

@@ -1,6 +1,6 @@
 ﻿using MAUI.ViewModel;
 
-namespace MAUI.View;
+namespace MAUI.Views;
 
 public partial class MainPage : ContentPage
 {

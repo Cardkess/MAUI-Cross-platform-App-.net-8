@@ -1,4 +1,4 @@
-﻿using MAUI.DTO.User;
+﻿using MAUI.DTOs.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;

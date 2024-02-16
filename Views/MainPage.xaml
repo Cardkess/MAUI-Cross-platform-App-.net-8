@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodel="clr-namespace:MAUI.ViewModel"
              x:DataType="viewmodel:SampleViewModel"
-             x:Class="MAUI.View.MainPage">
+             x:Class="MAUI.Views.MainPage">
 
     <ScrollView>
         <VerticalStackLayout

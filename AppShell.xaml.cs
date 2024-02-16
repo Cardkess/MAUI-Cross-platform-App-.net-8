@@ -1,6 +1,6 @@
-﻿using MAUI.View;
+﻿using MAUI.Views;
 
-namespace Matt
+namespace MAUI
 {
     public partial class AppShell : Shell
     {

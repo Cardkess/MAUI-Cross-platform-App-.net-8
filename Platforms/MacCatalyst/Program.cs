@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace Matt
+namespace MAUI
 {
     public class Program
     {
