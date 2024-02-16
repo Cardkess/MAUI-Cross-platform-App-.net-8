@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MAUI.ViewModel
+namespace MAUI.ViewModels
 {
     public partial class SampleViewModel : BaseViewModel
     {

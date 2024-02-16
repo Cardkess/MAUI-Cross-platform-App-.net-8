@@ -2,7 +2,7 @@
 using MAUI.Common;
 using MAUI.Services;
 using MAUI.Views;
-using MAUI.ViewModel;
+using MAUI.ViewModels;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Globalization;

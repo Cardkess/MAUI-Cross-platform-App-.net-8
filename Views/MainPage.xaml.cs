@@ -1,4 +1,4 @@
-﻿using MAUI.ViewModel;
+﻿using MAUI.ViewModels;
 
 namespace MAUI.Views;
 
