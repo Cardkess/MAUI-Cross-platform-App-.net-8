@@ -15,7 +15,7 @@ namespace MAUI.ViewModels.ModalViewModels
         [ObservableProperty]
         bool _isWelcomingUser;
 
-        SampleModalViewModel() { 
+        public SampleModalViewModel() { 
             
             IsWelcomingUser = false;
 

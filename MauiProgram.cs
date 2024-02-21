@@ -76,8 +76,9 @@ namespace MAUI
 
 
             //ViewModel
+            builder.Services.AddTransientPopup<SampleModal, SampleModalViewModel>();
             builder.Services.AddSingleton<SampleViewModel>();
-            builder.Services.AddTransientPopup<SampleModal, SampleModalViewModel>();    
+               
 
 #if DEBUG
             builder.Logging.AddDebug();

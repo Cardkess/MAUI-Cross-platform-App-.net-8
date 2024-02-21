@@ -32,6 +32,13 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Command="{Binding IncrementCommand}"
                 HorizontalOptions="Fill" />
+
+            <Button
+                Text="Show Modal" 
+                Command="{Binding ShowModalCommand}"
+                HorizontalOptions="Fill" />
+            
+            
         </VerticalStackLayout>
     </ScrollView>
 
