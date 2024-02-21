@@ -7,6 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Globalization;
 using System.Reflection;
+using MAUI.Views.Modals;
+using MAUI.ViewModels.ModalViewModels;
 
 namespace MAUI
 {
@@ -75,6 +77,7 @@ namespace MAUI
 
             //ViewModel
             builder.Services.AddSingleton<SampleViewModel>();
+            builder.Services.AddTransientPopup<SampleModal, SampleModalViewModel>();    
 
 #if DEBUG
             builder.Logging.AddDebug();
