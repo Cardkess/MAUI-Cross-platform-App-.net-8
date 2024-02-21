@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Maui.Views;
+using CommunityToolkit.Mvvm.Input;
 using MAUI.Views.Modals;
 using System;
 using System.Collections.Generic;
@@ -47,7 +48,7 @@ namespace MAUI.ViewModels.ModalViewModels
             // IsWelcomingUser = false;
         }
 
-
+        [RelayCommand]
         public async Task CloseModalAsync(SampleModalTriggers action)
         {
             if(SampleModal != null) { 

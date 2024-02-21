@@ -4,9 +4,17 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
     xmlns:viewmodel="clr-namespace:MAUI.ViewModels.ModalViewModels"
+    xmlns:enums="clr-namespace:MAUI.Enums"
     x:DataType="viewmodel:SampleModalViewModel"
+    xmlns:local="clr-namespace:MAUI.Views.Modals"
     x:Class="MAUI.Views.Modals.SampleModal">
-    
+
+    <toolkit:Popup.Resources>
+        <Style TargetType="{x:Type local:SampleModal}">
+            <Setter Property="CanBeDismissedByTappingOutsideOfPopup" Value="False" />
+        </Style>
+    </toolkit:Popup.Resources>
+
     <Frame
         Padding="10"
         BackgroundColor="{StaticResource White}"
@@ -15,7 +23,45 @@
         HasShadow="False"
         MinimumHeightRequest="300"
         WidthRequest="300">
-        
+
+        <Grid
+            Margin="0,0,0,10"
+            Padding="8"
+            ColumnDefinitions="*">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <!--  Row 0  -->
+                <RowDefinition Height="auto" />
+                <!--  Row 1  -->
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+
+                <Frame
+                    Margin="1,0,1,0"
+                    Padding="0"
+                    BorderColor="Transparent"
+                    HasShadow="False"
+                    HeightRequest="14"
+                    HorizontalOptions="End"
+                    MaximumHeightRequest="14"
+                    MaximumWidthRequest="14"
+                    WidthRequest="14">
+
+                    <ImageButton
+                        x:Name="CloseBtn"
+                        Aspect="AspectFit"
+                        Command="{Binding CloseModalCommand}"
+                        CommandParameter="{x:Static enums:SampleModalTriggers.Close}"
+                        Source="x_lg.png" />
+
+                </Frame>
+
+            </Grid>
+
+        </Grid>
+
     </Frame>
     
     
