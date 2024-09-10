@@ -15,18 +15,14 @@
         </Style>
     </toolkit:Popup.Resources>
 
-    <Frame
+    <VerticalStackLayout
         Padding="10"
         BackgroundColor="{StaticResource White}"
-        BorderColor="Transparent"
-        CornerRadius="0"
-        HasShadow="False"
         MinimumHeightRequest="300"
         WidthRequest="300">
 
         <Grid
             Margin="0,0,0,10"
-            Padding="8"
             ColumnDefinitions="*">
 
             <Grid.RowDefinitions>
@@ -62,7 +58,7 @@
 
         </Grid>
 
-    </Frame>
+    </VerticalStackLayout>
     
     
 </toolkit:Popup>
